@@ -268,52 +268,7 @@ export default {
       }
     },
     
-   /*  async saveStudent() {
-      this.saving = true
-      try {
-        const authStore = useAuthStore()
-        let url = 'http://localhost:3000/api/students'
-        let method = 'POST'
-        let dataToSend = { ...this.editedStudent }
-        
-        if (this.isEditing) {
-          url = `http://localhost:3000/api/students/${this.editedStudent.id}`
-          method = 'PUT'
-          dataToSend = {
-            name: this.editedStudent.name,
-            email: this.editedStudent.email
-          }
-        }
-        
-        const response = await fetch(url, {
-          method: method,
-          headers: {
-            'Authorization': `Bearer ${authStore.token}`,
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(dataToSend)
-        })
-        
-        const result = await response.json()
-        
-        if (result.success) {
-          this.closeDialog()
-          this.loadStudents()
-          this.showSnackbar(`Aluno ${this.isEditing ? 'editado' : 'cadastrado'} com sucesso`, 'success')
-        } else {
-          if (result.errors) {
-            this.showSnackbar('Erros de validação: ' + result.errors.join(', '), 'error')
-          } else {
-            this.showSnackbar(result.message, 'error')
-          }
-        }
-      } catch (error) {
-        console.error('Erro ao salvar aluno:', error)
-        this.showSnackbar('Erro ao salvar aluno', 'error')
-      } finally {
-        this.saving = false
-      }
-    }, */
+   
     
     closeDialog() {
       this.showDialog = false
