@@ -97,6 +97,7 @@ Teste Unitário: Jest.
 DB (postgres) -> Endpoint:qa.ci3ykwsu2ec8.us-east-1.rds.amazonaws.com
                  Porta: 5432
                  username:postgres
+                 password: 5UJFQvvN6NCeiRv
                  Acesso publico (configurei como regra de entrada a porta 0000/0, podem fazer uso durantes os testes)
 
 [Frontend] → [API Gateway] → [Backend] → [Database]
