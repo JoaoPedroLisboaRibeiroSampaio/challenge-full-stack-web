@@ -92,7 +92,8 @@ text
 - **Validação de entrada** ✅ Implementada no backend
 
 
-Teste Unitário: Jest
+Teste Unitário: Jest.
+
 DB (postgres) -> Endpoint:qa.ci3ykwsu2ec8.us-east-1.rds.amazonaws.com
                  Porta: 5432
                  username:postgres
