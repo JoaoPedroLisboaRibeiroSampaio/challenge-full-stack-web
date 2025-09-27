@@ -40,7 +40,7 @@ const User = database.sequelize.define('User', {
     underscored: true
 });
 
-// Associações
+
 User.belongsToMany(Role, {
     through: UserRole,
     foreignKey: 'user_id',

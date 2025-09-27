@@ -14,7 +14,7 @@ class AuthController {
                 });
             }
 
-            // Buscar usuário no banco
+            
             const user = await User.findOne({
                 where: { username }
             });
@@ -26,7 +26,7 @@ class AuthController {
                 });
             }
 
-            // VERIFICAÇÃO SIMPLES PARA TESTE
+           
             if (password === 'admin123') {
                 const token = jwt.sign(
                     { 
