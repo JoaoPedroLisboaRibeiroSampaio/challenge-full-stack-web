@@ -7,11 +7,11 @@ class Database {
         }
         
        this.sequelize = new Sequelize(
-    'databaseQA',
+    '',
     'postgres', 
     '5UJFQvvN6NCeiRv',
     {
-                host: 'qa.ci3ykwsu2ec8.us-east-1.rds.amazonaws.com',
+                host: 'databaseqa.ci3ykwsu2ec8.us-east-1.rds.amazonaws.com',
                 port: 5432,
                 dialect: 'postgres',
                 dialectOptions: {
